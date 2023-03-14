@@ -4,8 +4,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+   
 }
-
+body{
+   width: 100vw;
+   overflow-x: hidden;
+}
 :root {
     --primary-color: #FFCF00;
     --secondary-color: #262626
@@ -32,8 +36,10 @@ html {
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 100vh;
     position: relative;
+    overflow: hidden;
+    padding-bottom: 30px;
+
 
 }
 
@@ -127,7 +133,7 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    margin-top: 300px;
+    margin-top: 200px;
 }
 
 .header-text p {
@@ -465,7 +471,7 @@ nav ul {
     right: -500px;
     height: 100vh;
     width: 40%;
-    background: var(--primary-color);
+    background: #262626;
     display: flex;
     flex-direction: column;
     padding: 25px 25px;
@@ -496,7 +502,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: black;
+    color: yellow;
 }
 
 .header-text {
@@ -723,7 +729,63 @@ nav ul li a:hover {
         margin-top: 30px;
       max-width: 500px;
     }
+    .skillcontainer h1{
+        margin-bottom: 20px;
+    }
     .skillcontainer .wrapper .card{
       width: 100%;
     }
   }
+  .tab-contents a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  .tab-contents a:hover{
+    color: blue;
+  }
+  .about-col-1{
+    background: #262626;
+  }
+  .about-col-1:hover{
+    background: var(--primary-color);
+    transform: translateY(-8px);
+    transition: background 1s, color 1s, transform 0.5s;
+  }
+  .social ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.social ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social ul li a {
+    font-size: 40px;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.5s, transform 0.5s;
+    color: white;
+}
+
+.social ul li a:hover {
+    color: var(--primary-color);
+    transform: translateY(-8px);
+}
+.social p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.social p.bgcolor {
+    margin-top: 20px;
+    display: inline-block;
+    width: fit-content;
+    padding: 3px 11px;
+}
+#skills{
+    margin-top: 20px;
+}

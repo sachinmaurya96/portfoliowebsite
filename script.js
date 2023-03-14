@@ -41,3 +41,20 @@ let options = {
   $(".react .bar").circleProgress({
     value: 0.60
   });
+
+  let date = new Date;
+  let hours = date.getHours();
+  let greating = document.getElementById("greating")
+  if(hours >= 5 && hours < 12){
+    greating.innerHTML="Good Morning"
+  }else if(hours >= 12 && hours < 18){
+    greating.innerHTML="Good Afternoon"
+  }else if(hours >= 18 && hours < 20){
+    greating.innerHTML="Good Evening"
+  }else{
+    greating.innerHTML="Good Night"
+  }
+
+
+
+  
